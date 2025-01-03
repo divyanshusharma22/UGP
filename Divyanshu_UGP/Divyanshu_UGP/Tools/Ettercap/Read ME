@@ -1,0 +1,2 @@
+Give command as :
+python3 driver_dns.py <Target1 Ip> <Gateway Address>  

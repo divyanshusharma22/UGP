@@ -1,0 +1,4 @@
+{
+  "interface": "wlan0",
+  "log_file": "ettercap.log"
+}
